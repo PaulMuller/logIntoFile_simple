@@ -6,7 +6,6 @@ module.exports.logToFile = (_text, _file = 'default.log') =>
         errorMessage => errorMessage && console.log(getDateAsText() + ': ' + errorMessage)
     )
 
-
 const getDateAsText = (_date = new Date()) => 
         '['
         + appendZeroToLength(_date.getFullYear(),  4) + '.'
